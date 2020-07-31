@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Finansial</title>
+        <meta charset=utf-8/>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+
+<body>
+    <header>Selamat Datang di Kalkulator Finansial! Pilih fitur sesuai kebutuhanmu</header>
+    <nav>
+    <section><a href="index.html">Beranda</a></section>
+        <form>
+            <table class="center" border="3px">
+            <tr>
+                <td><h3>Total Investasi</h3>
+                <p>Masukan total Investasi yang ingin kamu anggarkan (Angka Saja)</p></td>
+                <td><input type="number" id="totalInvestasi" placeholder="1.000.000" step="1000000" min="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Jangka Waktu</h3>
+                <p>Masukan jangka waktu investasi yang kamu harapkan dalam satuan tahun (Angka Saja)</p></td>
+                <td><input type="number" id="jangkaWaktu" placeholder="Tahun" min="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Ekspektasi Imbal Hasil</h3>
+                <p>Masukan imbal hasil yang diharapkan, dalam satuan persen (Angka Saja)</p></td>
+                <td><input type="number" id="imbalHasil" placeholder="satuan %" min="0"></td>
+            </tr>
+            </table>
+            <input type="button" onClick= "hasil()" value="Hitung">
+            </form> 
+
+            <table class="center">
+            <tr>
+                <td>Investasi Awal</td>
+                <td>Imbal Hasil</td>
+                <td>Total Investasi yang didapat</td>
+            </tr>
+            <tr>
+                <td><textarea rows="1" cols="15" id = "investasiAwal"></textarea></td>
+                <td><textarea rows="1" cols="15" id = "hasilInvestasi"></textarea></td>
+                <td><textarea rows="1" cols="15" id = "totalInvestasi"></textarea></td>
+            </tr>
+         </table>
+        
+        </nav>
+    </body>
+</html> 

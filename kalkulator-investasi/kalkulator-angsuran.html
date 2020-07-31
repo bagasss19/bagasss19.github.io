@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Finansial</title>
+        <meta charset=utf-8/>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+
+<body>
+    <header>Selamat Datang di Kalkulator Finansial! Pilih fitur sesuai kebutuhanmu</header>
+    <nav>
+    <section><a href="index.html">Beranda</a></section>
+        <form>
+            <table class="center" border="3px">
+            <tr>
+                <td><h3>Total Angsuran</h3>
+                <p>Masukan total angsuran yang ingin kamu ambil (Angka Saja)</p></td>
+                <td><input type="number" id="totalAngsuran" placeholder="1.000.000" step="1000000" min="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Tenor Angsuran</h3>
+                <p>Masukan durasi angsuran yang ingin kamu ambil dalam satuan bulan (Angka Saja)</p></td>
+                <td><input type="number" id="tenorAngsuran" placeholder="24" min="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Bunga Angsuran</h3>
+                <p>Masukan bunga yang dikenakan, dalam satuan persen (Angka Saja)</p></td>
+                <td><input type="number" id="bungaAngsuran" placeholder="5" min="0"></td>
+            </tr>
+            </table>
+            <input type="button" onClick= "jumlah()" value="Hitung">
+            </form> 
+
+            <table class="center">
+            <tr>
+                <td>Cicilan Bunga</td>
+                <td>Cicilan Pokok</td>
+                <td>Total Cicilan</td>
+            </tr>
+            <tr>
+                <td><textarea rows="1" cols="15" id = "cicilanBunga"></textarea></td>
+                <td><textarea rows="1" cols="15" id = "cicilanPokok"></textarea></td>
+                <td><textarea rows="1" cols="15" id = "total"></textarea></td>
+            </tr>
+         </table>
+        
+        </nav>
+    </body>
+</html> 
